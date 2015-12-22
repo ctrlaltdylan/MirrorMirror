@@ -117,7 +117,9 @@ canvas {
 }
 
 #date {
-    width: 500px
+    float: left;
+    width: 500px;
+    height:600px;
 }
 
 #date p:first-child{
@@ -127,6 +129,13 @@ canvas {
 #time {
     font-size: 4em;
     padding: 0px;
+}
+
+section {
+    width: 90%;
+    margin: auto;
+    height:600px;
+    padding: 10px;
 }
 
 
