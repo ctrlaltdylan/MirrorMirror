@@ -16,31 +16,37 @@
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.0.2/jquery.simpleWeather.min.js"></script>
         <script src="/js/skycons.js"></script>
+        <script src="/js/vendor/moment.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     </head>
     <body>
+        <div id="date">
 
+        </div>
         <div id="weather">
+
         </div>
         <p id="greeting">
             {{ $greeting }}
         </p>
-        <div>
-        </div>
 
         <script>
+            var datetime = null,
+            date = null;
 
+            var update = function () {
+                date = moment(new Date())
+                var html = '<p><h3>' + date.format('dddd, MMMM Do YYYY') + '</h3></p>';
+                html += '<p id="time">' + date.format('HH:mm') + '</p>';
+                datetime.html(html);
+            };
 
-          // you can also halt animation with skycons.pause()
-
-          // want to change the icon? no problem:
-          //skycons.set("icon1", Skycons.PARTLY_CLOUDY_NIGHT);
-
-          // want to remove one altogether? no problem:
-          //skycons.remove("icon2");
+            $(document).ready(function() {
+                datetime = $('#date');
+                update();
+                setInterval(update, 1000);
+            });
         </script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
         <script>
         // Docs at http://simpleweatherjs.com
         $(document).ready(function() {

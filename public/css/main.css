@@ -116,6 +116,18 @@ canvas {
     margin-top: 8px;
 }
 
+#date {
+    margin-left: 8px;
+}
+
+#date p:first-child{
+    font-size: 1.85em;
+}
+
+#time {
+    font-size: 4em;
+    padding: 0px;
+}
 
 
 
