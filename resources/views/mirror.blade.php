@@ -233,5 +233,22 @@
           });
         });
         </script>
+        <script type="text/javascript">
+            var gitHash = {{ trim(`git rev-parse HEAD`) }};
+               (function checkVersion()
+                {
+                    $.getJSON('/version', {}, function(json, textStatus) {
+                        if (json) {
+                            if (json.gitHash != gitHash) {
+                                window.location.reload();
+                                window.location.href=window.location.href;
+                            }
+                        }
+                    });
+                    setTimeout(function() {
+                        checkVersion();
+                    }, 3000);
+                })(); 
+        </script>
     </body>
 </html>

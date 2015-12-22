@@ -19,3 +19,11 @@ $app->get('/', function () use ($app) {
    		'greeting' => $greeting,
     ]);
 });
+
+$app->get('/version', function() use ($app) {
+	$hash = trim(`git rev-parse HEAD`); 
+
+	return [
+		'version' => $hash,
+	]; 
+});
