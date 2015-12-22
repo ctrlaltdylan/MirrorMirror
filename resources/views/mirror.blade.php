@@ -36,7 +36,7 @@
 
             var update = function () {
                 date = moment(new Date())
-                var html = '<p><h3>' + date.format('dddd, MMMM Do YYYY') + '</h3></p>';
+                var html = '<p>' + date.format('dddd, MMMM Do YYYY') + '</p>';
                 html += '<p id="time">' + date.format('HH:mm') + '</p>';
                 datetime.html(html);
             };
