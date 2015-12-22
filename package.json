@@ -1,0 +1,24 @@
+{
+  "name": "MirrorMirror",
+  "version": "0.0.0",
+  "description": "Mirror mirror on the wall, who's the most capable programmer of them all?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ctrlaltdylan/MirrorMirror.git"
+  },
+  "keywords": [
+    "Magic",
+    "mirror",
+    "raspberry",
+    "pi"
+  ],
+  "author": "Dylan Pierce",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/ctrlaltdylan/MirrorMirror/issues"
+  }
+}
