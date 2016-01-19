@@ -31,7 +31,6 @@
         <p id="greeting">
             {{ $greeting }}
         </p>
-
         <script type="text/javascript" src="/js/clock.js"></script>
         <script type="text/javascript" src="/js/weather.js"></script>
         <script type="text/javascript">
