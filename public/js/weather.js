@@ -1,5 +1,6 @@
         // Docs at http://simpleweatherjs.com
-        $(document).ready(function() {
+        var updateWeather = function () {
+            alert("Running weather function")
           $.simpleWeather({
             location: 'Philadephia, PA',
             woeid: '',
@@ -180,4 +181,8 @@
               $("#weather").html('<p>'+error+'</p>');
             }
           });
-        });
+        };
+        $(document).ready(function() {
+            updateWeather();
+            SetInterval(updateWeather, 10000);
+        };
