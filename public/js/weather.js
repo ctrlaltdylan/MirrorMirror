@@ -1,10 +1,9 @@
         // Docs at http://simpleweatherjs.com
         var updateWeather = function () {
-            alert("Running weather function");
           $.simpleWeather({
-            location: 'Philadephia, PA',
+            location: 'Sydney, AU',
             woeid: '',
-            unit: 'f',
+            unit: 'c',
             success: function(weather) {
                 var skycons = new Skycons({"color": "white"});
 
@@ -184,5 +183,5 @@
         };
         $(document).ready(function() {
             updateWeather();
-            SetInterval(updateWeather, 10000);
+            setInterval(updateWeather, 300000);
         });
