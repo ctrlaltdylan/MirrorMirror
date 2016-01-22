@@ -119,7 +119,7 @@ canvas {
 #date {
     float: left;
     width: 400px;
-    height:600px;
+<!--    height:500px;-->
     margin: 0 0 0 0;
 }
 
@@ -139,11 +139,23 @@ section {
     padding: 10px;
 }
 
+#pianobar img {
+    height: 100px;
+}
 
+#pianobar p {
+    font-size: 1em;
+    border: 
+}
 
+#pianobar {
+    float: left;
+    border: white;
+}
 
-
-
+#pianobar h1 {
+    font-size: 1.5em;
+}
 
 
 

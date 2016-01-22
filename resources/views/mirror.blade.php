@@ -22,11 +22,14 @@
     <body>
         <section>
             <div id="date">
-
+				
             </div>
             <div id="weather">
-
+				
             </div>
+			<div id="pianobar">
+				
+			</div>
         </section>
         <p id="greeting">
             {{ $greeting }}
