@@ -1,8 +1,8 @@
         // Docs at http://simpleweatherjs.com
         var updateWeather = function () {
           $.simpleWeather({
-            location: 'Sydney, AU',
-            woeid: '',
+            location: '',
+            woeid: '1105779',
             unit: 'c',
             success: function(weather) {
                 var skycons = new Skycons({"color": "white"});
