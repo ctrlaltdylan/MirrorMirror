@@ -13,8 +13,8 @@
         <!-- Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.0.2/jquery.simpleWeather.min.js"></script>
+        <script src="/js/vendor/jquery-1.11.3.min.js"></script>
+        <script src="/js/vendor/jquery.simpleWeather.min.js"></script>
         <script src="/js/skycons.js"></script>
         <script src="/js/vendor/moment.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -22,17 +22,21 @@
     <body>
         <section>
             <div id="date">
-
+				
             </div>
             <div id="weather">
-
+				
             </div>
+			<div id="pianobar">
+				
+			</div>
         </section>
         <p id="greeting">
             {{ $greeting }}
         </p>
         <script type="text/javascript" src="/js/clock.js"></script>
         <script type="text/javascript" src="/js/weather.js"></script>
+	<script type="text/javascript" src="/js/pianobar.js"></script>
         <script type="text/javascript">
             var gitHash = {{ trim(`git rev-parse HEAD`) }};
                (function checkVersion()
