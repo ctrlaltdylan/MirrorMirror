@@ -1,9 +1,9 @@
         // Docs at http://simpleweatherjs.com
-        $(document).ready(function() {
+        var updateWeather = function () {
           $.simpleWeather({
-            location: 'Philadephia, PA',
-            woeid: '',
-            unit: 'f',
+            location: '',
+            woeid: '1105779',
+            unit: 'c',
             success: function(weather) {
                 var skycons = new Skycons({"color": "white"});
 
@@ -180,4 +180,8 @@
               $("#weather").html('<p>'+error+'</p>');
             }
           });
+        };
+        $(document).ready(function() {
+            updateWeather();
+            setInterval(updateWeather, 300000);
         });
