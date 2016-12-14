@@ -36,8 +36,8 @@
         </p>
         <script type="text/javascript">
             var greetings = {!! json_encode($greetings) !!};
-            var city = {!! $city !!};
-            var state = {!! $state !!}
+            var city = "{!! $city !!}";
+            var state = "{!! $state !!}"
             var woeid = {!! $woeid !!};
         </script>
         <script type="text/javascript" src="/js/clock.js"></script>
@@ -45,18 +45,18 @@
         <script type="text/javascript">
 
             function updateCompliment() {
-                var greeting = greetings[Math.floor(Math.random()*items.length)];
+                var greeting = greetings[Math.floor(Math.random()*greetings.length)];
 
                 $('#greeting').text(greeting);
             }
 
             setTimeout(function() {
                 updateCompliment();
-            }, 3000);
+            }, 30000);
 
         </script>
-        <script type="text/javascript">
-            var gitHash = {{ trim(`git rev-parse HEAD`) }};
+<!--         <script type="text/javascript">
+            var gitHash = "{{ trim(`git rev-parse HEAD`) }}";
                (function checkVersion()
                 {
                     $.getJSON('/version', {}, function(json, textStatus) {
@@ -71,6 +71,6 @@
                         checkVersion();
                     }, 3000);
                 })(); 
-        </script>
+        </script> -->
     </body>
 </html>

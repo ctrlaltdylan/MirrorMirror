@@ -3,7 +3,7 @@
           $.simpleWeather({
             location: '',
             'woeid': woeid,
-            unit: 'c',
+            unit: 'f',
             success: function(weather) {
                 var skycons = new Skycons({"color": "white"});
 
@@ -183,5 +183,5 @@
         };
         $(document).ready(function() {
             updateWeather();
-            setInterval(updateWeather, 300000);
+            setInterval(updateWeather, 30000);
         });

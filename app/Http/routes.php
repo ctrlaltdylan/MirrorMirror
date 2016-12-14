@@ -16,8 +16,8 @@ $app->get('/', function () use ($app) {
 
     return view('mirror', [
    		'greetings' => config('mirror.greetings'),
-   		'city' => env('city'),
-   		'state' => env('state'),
+   		'city' => env('CITY'),
+   		'state' => env('STATE'),
    		'woeid' => env('WOEID'),
     ]);
 });
