@@ -35,10 +35,10 @@
             
         </p>
         <script type="text/javascript">
-            var greetings = JSON.parse({!! json_encode($greetings) !!});
+            var greetings = JSON.parse({!!      json_encode($greetings) !!});
             var city = {!! $city !!};
             var state = {!! $state !!}
-            var woeid = {!! woeid !!};
+            var woeid = {!! $woeid !!};
         </script>
         <script type="text/javascript" src="/js/clock.js"></script>
         <script type="text/javascript" src="/js/weather.js"></script>
