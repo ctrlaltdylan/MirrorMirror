@@ -8,7 +8,7 @@ return [
 		"Have a great day!",
 		"At the hairdressers, people just point at you and say 'like that'.", 
 		"People talk about how nice you are behind your back.", 
-		"In a fight, you could beat two sharks, a bear and five ducks." 
+		"In a fight, you could beat two sharks, a bear and five ducks." ,
 		"You're the hero Gotham needs.",
 		"You're classier than Sir Patrick Stewart playing a grand piano on a yacht in Monaco.",
 		"You're in my top 5 humans of all time.",
