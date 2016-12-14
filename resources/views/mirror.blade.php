@@ -50,6 +50,8 @@
                 $('#greeting').text(greeting);
             }
 
+            updateCompliment();
+
             setTimeout(function() {
                 updateCompliment();
             }, 30000);
