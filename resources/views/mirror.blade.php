@@ -35,7 +35,7 @@
             
         </p>
         <script type="text/javascript">
-            var greetings = {!! $greetings !!};
+            var greetings = JSON.parse({!! json_encode($greetings) !!});
             var city = {!! $city !!};
             var state = {!! $state !!}
             var woeid = {!! woeid !!};
