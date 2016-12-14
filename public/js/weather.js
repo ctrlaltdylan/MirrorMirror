@@ -2,7 +2,7 @@
         var updateWeather = function () {
           $.simpleWeather({
             location: '',
-            woeid: '1105779',
+            'woeid': woeid,
             unit: 'c',
             success: function(weather) {
                 var skycons = new Skycons({"color": "white"});
@@ -165,7 +165,7 @@
 
                   skycons.remove('weather-icon')
                   // you can add a canvas by it's ID...
-                  console.log(animation);
+                  // console.log(animation);
                   skycons.add("weather-icon", animation);
 
                   // ...or by the canvas DOM element itself.

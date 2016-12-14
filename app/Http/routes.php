@@ -12,11 +12,11 @@
 */
 
 $app->get('/', function () use ($app) {
-	$key = array_rand(config('mirror.greetings'));
-	$greeting = config('mirror.greetings')[$key];
+
 
     return view('mirror', [
-   		'greeting' => $greeting,
+   		'greetings' => config('mirror.greetings'),
+   		'woeid' => config(env('WOEID'));
     ]);
 });
 

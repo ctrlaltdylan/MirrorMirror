@@ -32,11 +32,28 @@
 			</div>
         </section>
         <p id="greeting">
-            {{ $greeting }}
+            
         </p>
+        <script type="text/javascript">
+            var greetings = {!! $greetings->toJson() !!};
+            var location = {!! $location !!};
+            var woeid = {!! woeid !!};
+        </script>
         <script type="text/javascript" src="/js/clock.js"></script>
         <script type="text/javascript" src="/js/weather.js"></script>
-	<script type="text/javascript" src="/js/pianobar.js"></script>
+        <script type="text/javascript">
+
+            function updateCompliment() {
+                var greeting = greetings[Math.floor(Math.random()*items.length)];
+
+                $('#greeting').text(greeting);
+            }
+
+            setTimeout(function() {
+                updateCompliment();
+            }, 3000);
+
+        </script>
         <script type="text/javascript">
             var gitHash = {{ trim(`git rev-parse HEAD`) }};
                (function checkVersion()
