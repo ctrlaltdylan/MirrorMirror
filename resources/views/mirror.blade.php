@@ -35,8 +35,9 @@
             
         </p>
         <script type="text/javascript">
-            var greetings = {!! $greetings->toJson() !!};
-            var location = {!! $location !!};
+            var greetings = {!! $greetings !!};
+            var city = {!! $city !!};
+            var state = {!! $state !!}
             var woeid = {!! woeid !!};
         </script>
         <script type="text/javascript" src="/js/clock.js"></script>

@@ -8,7 +8,7 @@
                 var skycons = new Skycons({"color": "white"});
 
                   html = '<canvas id="weather-icon" width="128" height="128"></canvas><h2> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-                  html += '<div id="region">'+weather.city+', '+weather.region+'</div>';
+                  html += '<div id="region">'+ city+', '+ state +'</div>';
                   html += '<div>'+weather.currently+'</div>';
                   html += '<div>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</div>';
                   html += '<div><i class="fa fa-angle-up"></i>  High '+weather.high + ' <i class="fa fa-angle-down"></i>  Low ' + weather.low + '</div>'
